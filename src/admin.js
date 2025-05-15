@@ -4,7 +4,7 @@ let game;
 
 
 let jsonData = {
-    "category1": {
+    "category-one": {
         "Question": [
             {
                 question: "What is 2 x 2?",
@@ -14,32 +14,32 @@ let jsonData = {
             {
                 question: "What is 3 x 3?",
                 options: ["2", "3", "4", "9"],
-                answer: "4"
+                answer: "9"
             },
             {
                 question: "What is 4 x 4?",
                 options: ["2", "3", "4", "16"],
-                answer: "4"
+                answer: "16"
             },
             {
                 question: "What is 5 x 5?",
                 options: ["2", "3", "4", "25"],
-                answer: "4"
+                answer: "25"
             },
             {
                 question: "What is 6 x 6?",
                 options: ["2", "3", "4", "36"],
-                answer: "4"
+                answer: "36"
             },
             {
-                question: "What is 7 + 7?",
+                question: "What is 7 x 7?",
                 options: ["2", "3", "4", "49"],
-                answer: "4"
+                answer: "49"
             },
         ]
         
     },
-    "category2": {
+    "category-two": {
         "Question": [
             {
                 question: "What is 2 + 2?",
@@ -49,61 +49,61 @@ let jsonData = {
             {
                 question: "What is 3 + 3?",
                 options: ["2", "3", "4", "6"],
-                answer: "4"
+                answer: "6"
             },
             {
                 question: "What is 4 + 4?",
                 options: ["2", "3", "4", "8"],
-                answer: "4"
+                answer: "8"
             },
             {
                 question: "What is 5 + 5?",
                 options: ["2", "3", "4", "10"],
-                answer: "4"
+                answer: "10"
             },
             {
                 question: "What is 6 + 6?",
                 options: ["2", "3", "4", "12"],
-                answer: "4"
+                answer: "12"
             },
             {
                 question: "What is 7 + 7?",
                 options: ["2", "3", "4", "14"],
-                answer: "4"
+                answer: "14"
             },
         ]
     },
-    "category3": {
+    "category-three": {
         "Question": [
             {
                 question: "What is 2 - 2?",
                 options: ["2", "3", "4", "0"],
-                answer: "4"
+                answer: "0"
             },
             {
                 question: "What is 3 - 3?",
                 options: ["2", "3", "4", "0"],
-                answer: "4"
+                answer: "0"
             },
             {
                 question: "What is 4 - 4?",
                 options: ["2", "3", "4", "0"],
-                answer: "4"
+                answer: "0"
             },
             {
                 question: "What is 5 - 5?",
                 options: ["2", "3", "4", "0"],
-                answer: "4"
+                answer: "0"
             },
             {
                 question: "What is 6 - 6?",
                 options: ["2", "3", "4", "0"],
-                answer: "4"
+                answer: "0"
             },
             {
                 question: "What is 7 - 7?",
                 options: ["2", "3", "4", "0"],
-                answer: "4"
+                answer: "0"
             },
         ]
         
@@ -125,7 +125,6 @@ let jsonData = {
 
 categoryDivs.forEach(div => {
   div.addEventListener("click", () => {
-    // console.log(`${div.id} clicked`);
     chooseCategory(div.id)
     
   });
@@ -146,24 +145,35 @@ class QuizGame{
     constructor(category){
         this.category = category
         this.currentIndex = 0
-        this.questions = jsonData["category2"].Question;
+        this.score = 0
+        this.questions = jsonData[this.category].Question;
+        this.playing = true
         document.getElementById("submit").addEventListener("click", () => {
             this.next();
         });
+
+        console.log(this.category)
+        this.list = [] 
+        let number
+        // get distinct numbers here the numbers are repeating therefore the questions
+        for(let i=0; i<this.questions.length; i++){
+            number = Math.floor(Math.random() *this.questions.length)
+
+            this.list.push(number)
+            console.log(number)
+        }
     }
     
     
-    now(){
-        alert(jsonData.category1.Question)
-    }
     play(){
         let selectedAnswer
-        // console.log("current index = "+this.questions.length)
         if (this.currentIndex < this.questions.length) {
-            document.getElementById("Question").innerHTML = this.questions[this.currentIndex].question;
+            
+            document.getElementById("Question").innerHTML = this.questions[this.list[this.currentIndex]].question;
         
 
-            const quizQuestion = this.questions[this.currentIndex];
+            console.log("current indec" +this.list[this.currentIndex])
+            const quizQuestion = this.questions[this.list[this.currentIndex]];
             let html = `<p>${quizQuestion.question}</p>`;
     
             quizQuestion.options.forEach((option, index) => {
@@ -173,54 +183,56 @@ class QuizGame{
             ${option}
         </label><br>
     `;
-                // selectedAnswer = document.querySelector('input[name="option"]:checked');
-                // if (selected) {
-                //     console.log("You selected:", selected.value);
-                // } else {
-                //     console.log("No option selected.");
-                // }
-                // selectedAnswer = index
-                // selectedAnswer = document.querySelector('input[name="option"]:checked');
             });
 
-            
-            
-            // console.log("selected option---------------- "+selectedAnswer)
     
             document.getElementById("Question").innerHTML = html;
             const selectedAnswer = document.querySelector('input[name="option"]:checked');
             this.answerCheck(selectedAnswer?.value);
-        // selectedAnswer = selected
+     
         
         } else {
             document.getElementById("Question").style.display = "none"
-            document.getElementById("stats").innerHTML = "Quiz complete!";
+            document.getElementById("stats").innerHTML = `Quiz complete! your was ${this.score}`;
+            this.playing = false
             this.currentIndex = 0
+
         }
 
 
     this.answerCheck(selectedAnswer)
 
-
+    // we need a function that will display the time counting down
+    this.timer()
+    this.progressBar(this.currentIndex, this.questions.length);
+    if(this.playing == false)
+        clearTimeout(this.time);
     }
 
-    nextt(){
-
+    timer() {
+        if (this.time) {
+            clearTimeout(this.time);
+        }
+    
+        this.time = setTimeout(() => {
+            document.getElementById("submit").click();
+        }, 3000);
+    }
+    
+    progressBar(index, total) {
+        const percent = (index / total) * 100;
+        document.getElementById("progress-bar").style.width = percent + "%";
     }
 
     next() {
         const selectedInput = document.querySelector('input[name="option"]:checked');
-        // const selectedValue = selectedInput ? selectedInput.value : null;
-        const correctAnswer = this.questions[this.currentIndex].answer;
+        // const correctAnswer = this.questions[this.currentIndex].answer;
 
-        // if (selectedValue === correctAnswer) {
-        //     console.log("✅ Correct!");
-        // } else {
-        //     console.log(`❌ Wrong. Correct answer is: ${correctAnswer}`);
-        // }
+        const correctAnswer =this.questions[this.list[this.currentIndex]].answer
+        if(correctAnswer == selectedInput.value){
+            this.score++
+        }
 
-        // this.currentIndex++;
-        // this.play();
         console.log(selectedInput.value) 
         this.currentIndex++;
 
