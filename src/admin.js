@@ -6,33 +6,107 @@ let game;
 let jsonData = {
     "category1": {
         "Question": [
-            { "question": "What is 2 + 2?", "answer": "4", "options1": "1" },
-            { "question": "What is the capital of France?", "answer": "Paris" },
-            { "question": "What color do you get when you mix red and white?", "answer": "Pink" },
-            { "question": "What planet is known as the Red Planet?", "answer": "Mars" },
-            { "question": "How many continents are there?", "answer": "7" },
-            { "question": "What is the largest mammal?", "answer": "Blue Whale" }
+            {
+                question: "What is 2 x 2?",
+                options: ["2", "3", "4", "5"],
+                answer: "4"
+            },
+            {
+                question: "What is 3 x 3?",
+                options: ["2", "3", "4", "9"],
+                answer: "4"
+            },
+            {
+                question: "What is 4 x 4?",
+                options: ["2", "3", "4", "16"],
+                answer: "4"
+            },
+            {
+                question: "What is 5 x 5?",
+                options: ["2", "3", "4", "25"],
+                answer: "4"
+            },
+            {
+                question: "What is 6 x 6?",
+                options: ["2", "3", "4", "36"],
+                answer: "4"
+            },
+            {
+                question: "What is 7 + 7?",
+                options: ["2", "3", "4", "49"],
+                answer: "4"
+            },
         ]
+        
     },
     "category2": {
         "Question": [
-            { "question": "What is 5 x 6?", "answer": "30" },
-            { "question": "What is the boiling point of water in Celsius?", "answer": "100" },
-            { "question": "What gas do plants absorb?", "answer": "Carbon Dioxide" },
-            { "question": "What is the square root of 64?", "answer": "8" },
-            { "question": "What is the chemical symbol for gold?", "answer": "Au" },
-            { "question": "What is the opposite of hot?", "answer": "Cold" }
+            {
+                question: "What is 2 + 2?",
+                options: ["2", "3", "4", "5"],
+                answer: "4"
+            },
+            {
+                question: "What is 3 + 3?",
+                options: ["2", "3", "4", "6"],
+                answer: "4"
+            },
+            {
+                question: "What is 4 + 4?",
+                options: ["2", "3", "4", "8"],
+                answer: "4"
+            },
+            {
+                question: "What is 5 + 5?",
+                options: ["2", "3", "4", "10"],
+                answer: "4"
+            },
+            {
+                question: "What is 6 + 6?",
+                options: ["2", "3", "4", "12"],
+                answer: "4"
+            },
+            {
+                question: "What is 7 + 7?",
+                options: ["2", "3", "4", "14"],
+                answer: "4"
+            },
         ]
     },
     "category3": {
         "Question": [
-            { "question": "What is the fastest land animal?", "answer": "Cheetah" },
-            { "question": "What is H2O commonly known as?", "answer": "Water" },
-            { "question": "How many legs does a spider have?", "answer": "8" },
-            { "question": "Which ocean is the largest?", "answer": "Pacific" },
-            { "question": "How many hours are in a day?", "answer": "24" },
-            { "question": "What shape has three sides?", "answer": "Triangle" }
+            {
+                question: "What is 2 - 2?",
+                options: ["2", "3", "4", "0"],
+                answer: "4"
+            },
+            {
+                question: "What is 3 - 3?",
+                options: ["2", "3", "4", "0"],
+                answer: "4"
+            },
+            {
+                question: "What is 4 - 4?",
+                options: ["2", "3", "4", "0"],
+                answer: "4"
+            },
+            {
+                question: "What is 5 - 5?",
+                options: ["2", "3", "4", "0"],
+                answer: "4"
+            },
+            {
+                question: "What is 6 - 6?",
+                options: ["2", "3", "4", "0"],
+                answer: "4"
+            },
+            {
+                question: "What is 7 - 7?",
+                options: ["2", "3", "4", "0"],
+                answer: "4"
+            },
         ]
+        
     },
     "category4": {
         "Question": [
@@ -51,7 +125,7 @@ let jsonData = {
 
 categoryDivs.forEach(div => {
   div.addEventListener("click", () => {
-    console.log(`${div.id} clicked`);
+    // console.log(`${div.id} clicked`);
     chooseCategory(div.id)
     
   });
@@ -72,7 +146,7 @@ class QuizGame{
     constructor(category){
         this.category = category
         this.currentIndex = 0
-        this.questions = jsonData["category1"].Question;
+        this.questions = jsonData["category2"].Question;
         document.getElementById("submit").addEventListener("click", () => {
             this.next();
         });
@@ -83,22 +157,78 @@ class QuizGame{
         alert(jsonData.category1.Question)
     }
     play(){
-        console.log(this.questions.length)
+        let selectedAnswer
+        // console.log("current index = "+this.questions.length)
         if (this.currentIndex < this.questions.length) {
             document.getElementById("Question").innerHTML = this.questions[this.currentIndex].question;
+        
+
+            const quizQuestion = this.questions[this.currentIndex];
+            let html = `<p>${quizQuestion.question}</p>`;
+    
+            quizQuestion.options.forEach((option, index) => {
+                html += `
+        <label>
+            <input type="radio" name="option" value="${option}" ${index === 0 ? 'checked' : ''}>
+            ${option}
+        </label><br>
+    `;
+                // selectedAnswer = document.querySelector('input[name="option"]:checked');
+                // if (selected) {
+                //     console.log("You selected:", selected.value);
+                // } else {
+                //     console.log("No option selected.");
+                // }
+                // selectedAnswer = index
+                // selectedAnswer = document.querySelector('input[name="option"]:checked');
+            });
+
+            
+            
+            // console.log("selected option---------------- "+selectedAnswer)
+    
+            document.getElementById("Question").innerHTML = html;
+            const selectedAnswer = document.querySelector('input[name="option"]:checked');
+            this.answerCheck(selectedAnswer?.value);
+        // selectedAnswer = selected
+        
         } else {
-            document.getElementById("Question").innerHTML = "Quiz complete!";
+            document.getElementById("Question").style.display = "none"
+            document.getElementById("stats").innerHTML = "Quiz complete!";
             this.currentIndex = 0
         }
-        
-    
+
+
+    this.answerCheck(selectedAnswer)
+
+
+    }
+
+    nextt(){
+
     }
 
     next() {
+        const selectedInput = document.querySelector('input[name="option"]:checked');
+        // const selectedValue = selectedInput ? selectedInput.value : null;
+        const correctAnswer = this.questions[this.currentIndex].answer;
+
+        // if (selectedValue === correctAnswer) {
+        //     console.log("✅ Correct!");
+        // } else {
+        //     console.log(`❌ Wrong. Correct answer is: ${correctAnswer}`);
+        // }
+
+        // this.currentIndex++;
+        // this.play();
+        console.log(selectedInput.value) 
         this.currentIndex++;
+
         this.play();
     }
 
-    
+    answerCheck(option){
+        // console.log("You selected "  + option.value)
+    }
 
 }
