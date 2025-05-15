@@ -135,6 +135,7 @@ function chooseCategory(category) {
   document.getElementById("category-two").style.display = "none";
   document.getElementById("category-three").style.display = "none";
   document.getElementById("category-four").style.display = "none";
+//   document.getElementById("player-name").style.display = "none"
 
   game.play();
   return category;
@@ -147,11 +148,11 @@ class QuizGame {
     this.score = 0;
     this.questions = jsonData[this.category].Question;
     this.playing = true;
+    this.playerName = document.getElementById("player-name")
     document.getElementById("submit").addEventListener("click", () => {
       this.next();
     });
 
-    console.log(this.category);
     this.list = [];
     let number;
     // get distinct numbers here the numbers are repeating therefore the questions
@@ -190,9 +191,10 @@ class QuizGame {
       document.getElementById("Question").style.display = "none";
       document.getElementById(
         "stats"
-      ).innerHTML = `Quiz complete! your was ${this.score}`;
+      ).innerHTML = `Quiz complete! your was ${this.score} congratulations ${this.playerName.value}`;
       this.playing = false;
       this.currentIndex = 0;
+      this.highScoreSave(this.playerName.value)
     }
 
     // we need a function that will display the time counting down
@@ -231,5 +233,9 @@ class QuizGame {
     this.currentIndex++;
 
     this.play();
+  }
+
+  highScoreSave(name){
+    //
   }
 }
