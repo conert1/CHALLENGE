@@ -159,7 +159,9 @@ class QuizGame {
     // get distinct numbers here the numbers are repeating therefore the questions
     for (let i = 0; i < this.questions.length; i++) {
       number = Math.floor(Math.random() * this.questions.length);
-
+      while(this.list.includes(number)){
+        number = Math.floor(Math.random() *this.questions.length)
+      }
       this.list.push(number);
       console.log(number);
     }
