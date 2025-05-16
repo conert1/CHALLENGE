@@ -3,12 +3,13 @@ const categoryDivs = document.querySelectorAll("div[id^='category-']");
 let game;
 
 let jsonData = {
-  "category-one": {
+  "category-one": { // JavaScript Fundamentals
     Question: [
       {
-        question: "What is 2 x 2?",
-        options: ["2", "3", "4", "5"],
-        answer: "4",
+        question: "Which of the following best describes JavaScript?",
+        options: ["A server-side programming language.", "A programming language used for web development.", 
+                  "A markup language used to design websites.", "A database management system."],
+        answer: "A programming language used for web development",
       },
       {
         question: "What is 3 x 3?",
@@ -37,7 +38,7 @@ let jsonData = {
       },
     ],
   },
-  "category-two": {
+  "category-two": { // Backend Concepts
     Question: [
       {
         question: "What is 2 + 2?",
@@ -71,7 +72,7 @@ let jsonData = {
       },
     ],
   },
-  "category-three": {
+  "category-three": { // Relational Databases
     Question: [
       {
         question: "What is 2 - 2?",
@@ -105,7 +106,7 @@ let jsonData = {
       },
     ],
   },
-  category4: {
+  category4: { // Artificial Intelligence
     Question: [
       { question: "Who wrote 'Hamlet'?", answer: "William Shakespeare" },
       {
