@@ -1,128 +1,22 @@
 // const questions = require("../questions.json")
+let currentUser = { name: "", score: 0 };
+fetch('../highScores.json')
+  .then(response => response.json())
+  .then(data => {
+    const list = document.getElementById('scoreList');
+    data.forEach(user => {
+      const li = document.createElement('li');
+      li.textContent = `${user.name}, Age: ${user.score}`;
+      list.appendChild(li);
+
+    });
+  })
+
+
+
 const categoryDivs = document.querySelectorAll("div[id^='category-']");
 let game;
 
-let jsonData = {
-  "category-one": { // JavaScript Fundamentals
-    Question: [
-      {
-        question: "Which of the following best describes JavaScript?",
-        options: ["A server-side programming language.", "A programming language used for web development.", 
-                  "A markup language used to design websites.", "A database management system."],
-        answer: "A programming language used for web development",
-      },
-      {
-        question: "What is 3 x 3?",
-        options: ["2", "3", "4", "9"],
-        answer: "9",
-      },
-      {
-        question: "What is 4 x 4?",
-        options: ["2", "3", "4", "16"],
-        answer: "16",
-      },
-      {
-        question: "What is 5 x 5?",
-        options: ["2", "3", "4", "25"],
-        answer: "25",
-      },
-      {
-        question: "What is 6 x 6?",
-        options: ["2", "3", "4", "36"],
-        answer: "36",
-      },
-      {
-        question: "What is 7 x 7?",
-        options: ["2", "3", "4", "49"],
-        answer: "49",
-      },
-    ],
-  },
-  "category-two": { // Backend Concepts
-    Question: [
-      {
-        question: "What is 2 + 2?",
-        options: ["2", "3", "4", "5"],
-        answer: "4",
-      },
-      {
-        question: "What is 3 + 3?",
-        options: ["2", "3", "4", "6"],
-        answer: "6",
-      },
-      {
-        question: "What is 4 + 4?",
-        options: ["2", "3", "4", "8"],
-        answer: "8",
-      },
-      {
-        question: "What is 5 + 5?",
-        options: ["2", "3", "4", "10"],
-        answer: "10",
-      },
-      {
-        question: "What is 6 + 6?",
-        options: ["2", "3", "4", "12"],
-        answer: "12",
-      },
-      {
-        question: "What is 7 + 7?",
-        options: ["2", "3", "4", "14"],
-        answer: "14",
-      },
-    ],
-  },
-  "category-three": { // Relational Databases
-    Question: [
-      {
-        question: "What is 2 - 2?",
-        options: ["2", "3", "4", "0"],
-        answer: "0",
-      },
-      {
-        question: "What is 3 - 3?",
-        options: ["2", "3", "4", "0"],
-        answer: "0",
-      },
-      {
-        question: "What is 4 - 4?",
-        options: ["2", "3", "4", "0"],
-        answer: "0",
-      },
-      {
-        question: "What is 5 - 5?",
-        options: ["2", "3", "4", "0"],
-        answer: "0",
-      },
-      {
-        question: "What is 6 - 6?",
-        options: ["2", "3", "4", "0"],
-        answer: "0",
-      },
-      {
-        question: "What is 7 - 7?",
-        options: ["2", "3", "4", "0"],
-        answer: "0",
-      },
-    ],
-  },
-  category4: { // Artificial Intelligence
-    Question: [
-      { question: "Who wrote 'Hamlet'?", answer: "William Shakespeare" },
-      {
-        question: "Which animal is known as the king of the jungle?",
-        answer: "Lion",
-      },
-      {
-        question: "What instrument has keys, pedals, and strings?",
-        answer: "Piano",
-      },
-      { question: "Which month has 28 or 29 days?", answer: "February" },
-      { question: "How many colors are in a rainbow?", answer: "7" },
-      { question: "What is the smallest prime number?", answer: "2" },
-    ],
-  },
-};
 let jsondd = {};
 
 categoryDivs.forEach((div) => {
@@ -131,20 +25,6 @@ categoryDivs.forEach((div) => {
     chooseCategory(div.id);
   });
 });
-
-// function chooseCategory(category) {
-//   let game = new QuizGame(category);
-//   document.getElementById("category-one").style.display = "none";
-//   document.getElementById("category-two").style.display = "none";
-//   document.getElementById("category-three").style.display = "none";
-//   document.getElementById("category-four").style.display = "none";
-// //   document.getElementById("player-name").style.display = "none"
-
-
-
-//   game.play();
-//   return category;
-// }
 
 
 
@@ -159,6 +39,7 @@ async function chooseCategory(category) {
   document.getElementById("category-two").style.display = "none";
   document.getElementById("category-three").style.display = "none";
   document.getElementById("category-four").style.display = "none";
+  document.getElementById("player-name").style.display = "none";
 
   game.play();
 }
@@ -180,24 +61,17 @@ async function initial() {
   // console.log(data[category])
   jsondd = data
 }
-// async function initializ(){
-//   const response = await fetch("../questions.json");
-//   const data = await response.json();
-
-//   // Load main category
-//   this.secondQuestions = data[this.category];
-//   console.log(this.secondQuestions)
-// }
 
 class QuizGame {
   constructor(category) {
-
+//replaces length will get this value from admin input
+    this.numberOfQuestions = 6
     this.category = category;
     this.currentIndex = 0;
     this.score = 0;
-    this.questions = jsonData[this.category].Question;
+    // this.questions = jsonData[this.category].Question;
     
-    this.secondQuestions = jsondd
+    this.secondQuestions = jsondd[this.category]
     
     this.playing = true;
     this.playerName = document.getElementById("player-name")
@@ -207,31 +81,26 @@ class QuizGame {
 
     this.list = [];
     let number;
-    // get distinct numbers here the numbers are repeating therefore the questions
-    for (let i = 0; i < this.questions.length; i++) {
-      number = Math.floor(Math.random() * this.questions.length);
+
+    for (let i = 0; i < this.numberOfQuestions; i++) {
+      number = Math.floor(Math.random() * this.numberOfQuestions);
       while(this.list.includes(number)){
-        number = Math.floor(Math.random() *this.questions.length)
+        number = Math.floor(Math.random() *this.numberOfQuestions)
       }
       this.list.push(number);
-      console.log(number);
     }
   }
 
 
-  
-
-
   play() {
     // let selectedAnswer
-    if (this.currentIndex < this.questions.length) {
-      console.log(this.secondQuestions[this.category][0])
-      console.log(this.questions)
+    if (this.currentIndex < this.numberOfQuestions) {
+      console.log(this.secondQuestions)
       document.getElementById("Question").innerHTML =
-        this.questions[this.list[this.currentIndex]].question;
+        this.secondQuestions[this.list[this.currentIndex]];
 
-      console.log("current indec" + this.list[this.currentIndex]);
-      const quizQuestion = this.questions[this.list[this.currentIndex]];
+      console.log("current indec" + this.secondQuestions[this.list[this.currentIndex]].answer);
+      const quizQuestion = this.secondQuestions[this.list[this.currentIndex]];
       let html = `<p>${quizQuestion.question}</p>`;
 
       quizQuestion.options.forEach((option, index) => {
@@ -249,9 +118,12 @@ class QuizGame {
       // const selectedAnswer = document.querySelector('input[name="option"]:checked');
     } else {
       document.getElementById("Question").style.display = "none";
+      document.getElementById("Answer").style.display = "none";
+      document.getElementById("submit").style.display = "none";
+      
       document.getElementById(
         "stats"
-      ).innerHTML = `Quiz complete! your was ${this.score} congratulations ${this.playerName.value}`;
+      ).innerHTML = `Quiz complete! your score is ${this.score} congratulations ${this.playerName.value}`;
       this.playing = false;
       this.currentIndex = 0;
       this.highScoreSave(this.playerName.value)
@@ -259,7 +131,7 @@ class QuizGame {
 
     // we need a function that will display the time counting down
     this.timer();
-    this.progressBar(this.currentIndex, this.questions.length);
+    this.progressBar(this.currentIndex, this.numberOfQuestions);
     if (this.playing == false) clearTimeout(this.time);
   }
 
@@ -270,7 +142,7 @@ class QuizGame {
 
     this.time = setTimeout(() => {
       document.getElementById("submit").click();
-    }, 3000);
+    }, 20000);
   }
 
   progressBar(index, total) {
@@ -282,9 +154,7 @@ class QuizGame {
     const selectedInput = document.querySelector(
       'input[name="option"]:checked'
     );
-    // const correctAnswer = this.questions[this.currentIndex].answer;
-
-    const correctAnswer = this.questions[this.list[this.currentIndex]].answer;
+    const correctAnswer = this.secondQuestions[this.list[this.currentIndex]].answer;
     if (correctAnswer == selectedInput.value) {
       this.score++;
     }
@@ -296,6 +166,17 @@ class QuizGame {
   }
 
   highScoreSave(name){
-    //
+    let data = [
+      { name: "Alice", score: 2 },
+      { name: "Bob", score: 1 }
+    ];
+    
+    // New user to add
+    const newUser = { name: "Charlie", score: 3 };
+    
+    // Add to the array
+    data.push(newUser);
+    
+  
   }
 }
