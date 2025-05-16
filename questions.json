@@ -1,18 +1,611 @@
 {
-    "category1":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
-    },
-    "category2":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
-    },
-    "category3":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
-    },
-    "category4":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
-    }
+    "category1": [
+        {
+            "question": "Which of the following best describes JavaScript?",
+            "options": ["A server-side programming language.", "A programming language used for web development.", 
+                        "A markup language used to design websites.", "A database management system."],
+            "answer": "A programming language used for web development",
+            "answerIndex": 1
+        },
+        {
+            "question": "What is the common naming convention for variables in JavaScript?",
+            "options": ["Snake case", "Pascal case", "Camel case", "Kebab case"],
+            "answer": "Camel case",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which of the following does NOT describe an object in JavaScript?",
+            "options": ["A primitive data type.", "A non-primitive data type.", "A collection of key-value pairs.",
+                        "A container for properties and methods."],
+            "answer": "A primitive data type.",
+            "answerIndex": 0
+        },
+        {
+            "question": "What is an arrow function?",
+            "options": ["A function with no return value", "A shorthand syntax for defining functions",
+                        "A type of array", "A loop"],
+            "answer": "A shorthand syntax for defining functions",
+            "answerIndex": 1
+        },
+        {
+            "question": "What is destructuring in JavaScript?",
+            "options": ["Removing elements from an array.", "Deleting properties from an object.",
+                        "Extracting values from arrays or objects into variables.", "Splitting a string into characters."],
+            "answer": "Extracting values from arrays or objects into variables.",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is hoisting in JavaScript?",
+            "options": ["Pushing elements to the top of an array.", "Using variables without declaring them.", 
+            "A loop structure.", "JavaScript's default behavior of moving declarations to the top."],
+            "answer": "JavaScript's default behavior of moving declarations to the top.",
+            "answerIndex": 3
+        },
+        {
+            "question": "What is a higher-order function?",
+            "options": ["A function that is written using ES6 syntax.", "A function that takes another function as an argument or returns a function.", 
+                        "A function that returns a number greater than another.", "A function that is executed at a higher scope level."],
+            "answer": "A function that takes another function as an argument or returns a function.",
+            "answerIndex": 1
+        },
+        {
+            "question": "What does a callback function mean in JavaScript?",
+            "options": ["A function that returns another function.", " A function that is passed into another function as an argument.",
+                        "A function that calls itself.", "A built-in JavaScript method."],
+            "answer": "A function that is passed into another function as an argument",
+            "answerIndex": 1
+        },
+        {
+            "question": " Which method adds an element to the end of an array?",
+            "options": ["push()", "pop()", "shift()", "unshift()"],
+            "answer": "push()",
+            "answerIndex": 0
+        },
+        {
+            "question": "What is the difference between null and undefined?",
+            "options": ["No difference.", "null means a variable was declared but not assigned; undefined means empty.",
+                        "undefined means a variable was declared but not assigned; null is intentional absence of value.",
+                        "Both mean zero."],
+            "answer": "undefined means a variable was declared but not assigned; null is intentional absence of value",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is the difference between let and const?",
+            "options": ["let can be reassigned; const cannot.",
+                        "const is block-scoped; let is not.",
+                        "let is used for constants.",
+                        "No difference."],
+            "answer": "let can be reassigned; const cannot.",
+            "answerIndex": 0
+        },
+        {
+            "question": "Which keyword is used to declare a block-scoped variable?",
+            "options": [
+                "var",
+                "let",
+                "const",
+                "Both let and const"
+            ],
+            "answer": "Both let and const",
+            "answerIndex": 3
+        },
+        {
+            "question": "Which method adds one or more elements to the beginning of an array?",
+            "options": [
+                "push()",
+                "pop()",
+                "shift()",
+                "unshift()"
+            ],
+            "answer": "unshift()",
+            "answerIndex": 3
+        },
+        {
+            "question": "What is the purpose of the 'continue' statement in a loop?",
+            "options": [
+                "Exit the loop completely",
+                "Restart the loop from the beginning",
+                "Skip the current iteration and continue with the next one",
+                "End the program"
+            ],
+            "answer": "Skip the current iteration and continue with the next one",
+            "answerIndex": 2
+        },
+        {
+            "question": "What does the Array.prototype.map() method do?",
+            "options": [
+                "Removes items from an array",
+                "Returns a new array with the results of calling a function on every element",
+                "Filters the array based on a condition",
+                "Sorts the array in alphabetical order"
+            ],
+            "answer": "Returns a new array with the results of calling a function on every element",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        }
+    ],
+
+    "category2": [
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        }
+
+    ],
+
+    "category3": [
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        }
+    ],
+
+    "category4": [
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        },
+        {
+            "question": "",
+            "options": [],
+            "answer": "",
+            "answerIndex": 1
+        }
+    ]
 }
+
