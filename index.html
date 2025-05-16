@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Quiz App</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="start-form" class="card">
+        <h1>Tech Quiz</h1>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your name"
+          required
+        />
+        <select id="category">
+          <option value="js">JavaScript</option>
+          <option value="html">HTML</option>
+        </select>
+        <button type="submit">Start Quiz</button>
+      </form>
 
-<body>
-    <input type="text" name="name" id="player-name">
-    <div id="category-one">1</div>
-    <div id="category-two">2</div>
-    <div id="category-three">3</div>
-    <div id="category-four">4</div>
-    <div id="Question">question</div>
-    <div id="Answer">answer</div>
-    <button id="submit">submit</button>
-    <div id="stats"></div>
-
-    <div id="progress-container">
-        <div id="progress-bar"></div>
+      <div id="quiz-container" class="card" style="display: none">
+        <div id="progress-container"><div id="progress-bar"></div></div>
+        <div id="timer">10</div>
+        <h2 id="question-text"></h2>
+        <ul id="answers-list"></ul>
       </div>
 
+      <div id="result" class="card" style="display: none"></div>
 
-</body>
-<script src="./src/admin.js"></script>
+      <div id="leaderboard" class="card">
+        <h2>Leaderboard</h2>
+        <label for="leaderboard-filter">Filter by Category:</label>
+        <select id="leaderboard-filter">
+          <option value="all">All</option>
+          <option value="js">JavaScript</option>
+          <option value="html">HTML</option>
+        </select>
+        <ol id="leaderboard-list"></ol>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

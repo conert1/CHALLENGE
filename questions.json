@@ -1,18 +1,241 @@
 {
-    "category1":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
+  "js": [
+    {
+      "question": "What does JS stand for?",
+      "answers": ["JavaScript", "JustScript", "JavaSystem", "JScript"],
+      "correct": "JavaScript"
     },
-    "category2":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
+    {
+      "question": "What is the output of '2' + 2?",
+      "answers": ["22", "4", "undefined", "NaN"],
+      "correct": "22"
     },
-    "category3":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
+    {
+      "question": "What keyword declares a constant?",
+      "answers": ["const", "let", "var", "define"],
+      "correct": "const"
     },
-    "category4":{
-        "Question": "aaaaaaaaaaaaaaaaa",
-        "answer": "2"
+    {
+      "question": "Which method adds an item to the end of an array?",
+      "answers": ["push()", "pop()", "shift()", "unshift()"],
+      "correct": "push()"
+    },
+    {
+      "question": "What symbol is used for single-line comments?",
+      "answers": ["//", "/*", "#", "<!--"],
+      "correct": "//"
+    },
+    {
+      "question": "Which method converts a JSON string into an object?",
+      "answers": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.toObj()",
+        "parseJSON()"
+      ],
+      "correct": "JSON.parse()"
+    },
+    {
+      "question": "Which type is NOT primitive in JS?",
+      "answers": ["object", "string", "boolean", "number"],
+      "correct": "object"
+    },
+    {
+      "question": "What does NaN stand for?",
+      "answers": [
+        "Not a Number",
+        "Null as Number",
+        "No any Number",
+        "New assigned Number"
+      ],
+      "correct": "Not a Number"
+    },
+    {
+      "question": "Which function delays code execution?",
+      "answers": ["setTimeout()", "wait()", "sleep()", "delay()"],
+      "correct": "setTimeout()"
+    },
+    {
+      "question": "What is used to check equality without type conversion?",
+      "answers": ["===", "==", "!=", "="],
+      "correct": "==="
+    },
+    {
+      "question": "What is the type of null?",
+      "answers": ["object", "null", "undefined", "string"],
+      "correct": "object"
+    },
+    {
+      "question": "Which method joins array elements into a string?",
+      "answers": ["join()", "merge()", "concat()", "combine()"],
+      "correct": "join()"
+    },
+    {
+      "question": "What is the scope of let?",
+      "answers": ["block", "function", "global", "file"],
+      "correct": "block"
+    },
+    {
+      "question": "Which operator is used to assign a value?",
+      "answers": ["=", "==", "===", ":"],
+      "correct": "="
+    },
+    {
+      "question": "What value is falsy?",
+      "answers": ["0", "false", "null", "All of the above"],
+      "correct": "All of the above"
+    },
+    {
+      "question": "Which operator is logical AND?",
+      "answers": ["&&", "||", "!", "&"],
+      "correct": "&&"
+    },
+    {
+      "question": "What is the output of typeof []?",
+      "answers": ["object", "array", "list", "undefined"],
+      "correct": "object"
+    },
+    {
+      "question": "What does DOM stand for?",
+      "answers": [
+        "Document Object Model",
+        "Data Object Map",
+        "Display Oriented Model",
+        "Document Oriented Module"
+      ],
+      "correct": "Document Object Model"
+    },
+    {
+      "question": "How do you stop a loop?",
+      "answers": ["break", "exit", "stop", "return"],
+      "correct": "break"
+    },
+    {
+      "question": "Which method removes the last array element?",
+      "answers": ["pop()", "remove()", "delete()", "shift()"],
+      "correct": "pop()"
     }
+  ],
+  "html": [
+    {
+      "question": "What does HTML stand for?",
+      "answers": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Machine Language",
+        "Home Tool Markup Language"
+      ],
+      "correct": "HyperText Markup Language"
+    },
+    {
+      "question": "Which tag is used to insert a line break?",
+      "answers": ["<br>", "<lb>", "<break>", "<newline>"],
+      "correct": "<br>"
+    },
+    {
+      "question": "Which element is used for the largest heading?",
+      "answers": ["<h1>", "<heading>", "<head>", "<h6>"],
+      "correct": "<h1>"
+    },
+    {
+      "question": "Which tag defines a paragraph?",
+      "answers": ["<p>", "<para>", "<paragraph>", "<text>"],
+      "correct": "<p>"
+    },
+    {
+      "question": "Which attribute is used to provide an image description?",
+      "answers": ["alt", "title", "desc", "src"],
+      "correct": "alt"
+    },
+    {
+      "question": "How do you create a hyperlink?",
+      "answers": ["<a>", "<link>", "<href>", "<url>"],
+      "correct": "<a>"
+    },
+    {
+      "question": "Which tag is used to create a table row?",
+      "answers": ["<tr>", "<row>", "<td>", "<th>"],
+      "correct": "<tr>"
+    },
+    {
+      "question": "Which attribute specifies a form submission URL?",
+      "answers": ["action", "method", "href", "target"],
+      "correct": "action"
+    },
+    {
+      "question": "Which tag creates a numbered list?",
+      "answers": ["<ol>", "<ul>", "<li>", "<list>"],
+      "correct": "<ol>"
+    },
+    {
+      "question": "Which tag creates an unordered list?",
+      "answers": ["<ul>", "<ol>", "<li>", "<list>"],
+      "correct": "<ul>"
+    },
+    {
+      "question": "Which attribute is used to specify inline styles?",
+      "answers": ["style", "class", "css", "font"],
+      "correct": "style"
+    },
+    {
+      "question": "What does <em> do?",
+      "answers": [
+        "Italic text",
+        "Bold text",
+        "Underline text",
+        "Strikethrough text"
+      ],
+      "correct": "Italic text"
+    },
+    {
+      "question": "What is the default file extension for HTML files?",
+      "answers": [".html", ".htm", ".xhtml", ".xml"],
+      "correct": ".html"
+    },
+    {
+      "question": "How do you open a link in a new tab?",
+      "answers": [
+        "target=\"_blank\"",
+        "href=\"newtab\"",
+        "window=\"new\"",
+        "tab=\"open\""
+      ],
+      "correct": "target=\"_blank\""
+    },
+    {
+      "question": "Which tag defines a cell in a table?",
+      "answers": ["<td>", "<tr>", "<th>", "<cell>"],
+      "correct": "<td>"
+    },
+    {
+      "question": "Which input type is used for passwords?",
+      "answers": ["password", "text", "secure", "hidden"],
+      "correct": "password"
+    },
+    {
+      "question": "What tag defines a list item?",
+      "answers": ["<li>", "<item>", "<list>", "<ul>"],
+      "correct": "<li>"
+    },
+    {
+      "question": "How do you comment in HTML?",
+      "answers": [
+        "<!-- comment -->",
+        "// comment",
+        "/* comment */",
+        "# comment"
+      ],
+      "correct": "<!-- comment -->"
+    },
+    {
+      "question": "Which tag is used to embed a video?",
+      "answers": ["<video>", "<embed>", "<media>", "<mp4>"],
+      "correct": "<video>"
+    },
+    {
+      "question": "What tag is used to group content together?",
+      "answers": ["<div>", "<group>", "<span>", "<section>"],
+      "correct": "<div>"
+    }
+  ]
 }
