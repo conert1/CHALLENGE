@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App Administration</title>
+</head>
+<body>
+    <div id="container">
+        <main>
+            <h1>Tech Quiz App Administration</h1>
+            
+            <div id="category-screen" class="screen">
+                <p>Please select a category</p>
+                <button class="category-btn" data-category="JavaScript Fundamentals">JavaScript Fundamentals</button>
+                <button class="category-btn" data-category="Backend Concepts">Backend Concepts</button>
+                <button class="category-btn" data-category="Relational Databases">Relational Databases</button>
+                <button class="category-btn" data-category="Artificial Intelligence">Artificial Intelligence</button>
+            </div>
+            <div id="options-screen" class="screen hidden">
+            <h2 id="category-title"></h2>
+            <div class="option-buttons">
+                <button class="set-btn">Set number of questions for quiz</button>
+                <button class="add-btn">Add a question</button>
+                <button class="del-btn">Delete a question</button>
+            </div>
+                <button id="back-btn" class="back-btn">Back to Categories</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
