@@ -225,7 +225,7 @@ class QuizGame {
   play() {
     // let selectedAnswer
     if (this.currentIndex < this.questions.length) {
-      console.log(this.secondQuestions)
+      console.log(this.secondQuestions[this.category][0])
       console.log(this.questions)
       document.getElementById("Question").innerHTML =
         this.questions[this.list[this.currentIndex]].question;
