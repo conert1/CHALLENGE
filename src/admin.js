@@ -123,31 +123,82 @@ let jsonData = {
     ],
   },
 };
+let jsondd = {};
 
 categoryDivs.forEach((div) => {
   div.addEventListener("click", () => {
+    // jsondd = initial(div.id)
     chooseCategory(div.id);
   });
 });
 
-function chooseCategory(category) {
-  let game = new QuizGame(category);
+// function chooseCategory(category) {
+//   let game = new QuizGame(category);
+//   document.getElementById("category-one").style.display = "none";
+//   document.getElementById("category-two").style.display = "none";
+//   document.getElementById("category-three").style.display = "none";
+//   document.getElementById("category-four").style.display = "none";
+// //   document.getElementById("player-name").style.display = "none"
+
+
+
+//   game.play();
+//   return category;
+// }
+
+
+
+async function chooseCategory(category) {
+  if (!jsondd[category]) {
+    console.error("Category not loaded!");
+    return;
+  }
+
+  const game = new QuizGame(category);
   document.getElementById("category-one").style.display = "none";
   document.getElementById("category-two").style.display = "none";
   document.getElementById("category-three").style.display = "none";
   document.getElementById("category-four").style.display = "none";
-//   document.getElementById("player-name").style.display = "none"
 
   game.play();
-  return category;
 }
+
+
+
+(async () => {
+  await initial();
+
+  // Now `jsondd` is available and can be used to create the game
+  // const game = new QuizGame("category-one");
+  // game.play();
+})();
+
+
+async function initial() {
+  const resp = await fetch("../questions.json")
+  const data = await resp.json()
+  // console.log(data[category])
+  jsondd = data
+}
+// async function initializ(){
+//   const response = await fetch("../questions.json");
+//   const data = await response.json();
+
+//   // Load main category
+//   this.secondQuestions = data[this.category];
+//   console.log(this.secondQuestions)
+// }
 
 class QuizGame {
   constructor(category) {
+
     this.category = category;
     this.currentIndex = 0;
     this.score = 0;
     this.questions = jsonData[this.category].Question;
+    
+    this.secondQuestions = jsondd
+    
     this.playing = true;
     this.playerName = document.getElementById("player-name")
     document.getElementById("submit").addEventListener("click", () => {
@@ -167,9 +218,15 @@ class QuizGame {
     }
   }
 
+
+  
+
+
   play() {
     // let selectedAnswer
     if (this.currentIndex < this.questions.length) {
+      console.log(this.secondQuestions)
+      console.log(this.questions)
       document.getElementById("Question").innerHTML =
         this.questions[this.list[this.currentIndex]].question;
 
