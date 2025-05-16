@@ -494,344 +494,455 @@
         {
             "question": "What is a primary key in a relational database?",
             "options": [
-            "A field that uniquely identifies each record",
-            "A field that stores passwords",
-            "A field that links to another table",
-            "A field that contains duplicated values"
-            ],
+                "A field that uniquely identifies each record",
+                "A field that stores passwords",
+                "A field that links to another table",
+                "A field that contains duplicated values"
+                ],
             "answer": "A field that uniquely identifies each record",
             "answerIndex": 0
         },
         {
             "question": "What does SQL stand for?",
             "options": [
-            "Structured Query List",
-            "Simple Query Language",
-            "Structured Query Language",
-            "Server Query Logic"
-            ],
+                "Structured Query List",
+                "Simple Query Language",
+                "Structured Query Language",
+                "Server Query Logic"
+                ],
             "answer": "Structured Query Language",
             "answerIndex": 2
         },
         {
             "question": "Which SQL command is used to add new records to a table?",
             "options": [
-            "ADD",
-            "INSERT INTO",
-            "APPEND",
-            "CREATE"
-            ],
+                "ADD",
+                "INSERT INTO",
+                "APPEND",
+                "CREATE"
+                ],
             "answer": "INSERT INTO",
             "answerIndex": 1
         },
         {
             "question": "Which SQL clause is used to filter results?",
             "options": [
-            "ORDER BY",
-            "WHERE",
-            "SELECT",
-            "GROUP BY"
-            ],
+                "ORDER BY",
+                "WHERE",
+                "SELECT",
+                "GROUP BY"
+                ],
             "answer": "WHERE",
             "answerIndex": 1
         },
         {
             "question": "What does the FOREIGN KEY constraint do?",
             "options": [
-            "Enforces uniqueness of values",
-            "Links two tables together",
-            "Sets a default value",
-            "Indexes the table"
-            ],
+                "Enforces uniqueness of values",
+                "Links two tables together",
+                "Sets a default value",
+                "Indexes the table"
+                ],
             "answer": "Links two tables together",
             "answerIndex": 1
         },
         {
             "question": "Which command is used to remove a table from the database?",
             "options": [
-            "DELETE",
-            "DROP",
-            "REMOVE",
-            "CLEAR"
-            ],
+                "DELETE",
+                "DROP",
+                "REMOVE",
+                "CLEAR"
+                ],
             "answer": "DROP",
             "answerIndex": 1
         },
         {
             "question": "What is normalization in relational databases?",
             "options": [
-            "A method to back up data",
-            "The process of formatting SQL queries",
-            "Organizing data to reduce redundancy",
-            "Encrypting database fields"
-            ],
+                "A method to back up data",
+                "The process of formatting SQL queries",
+                "Organizing data to reduce redundancy",
+                "Encrypting database fields"
+                ],
             "answer": "Organizing data to reduce redundancy",
             "answerIndex": 2
         },
         {
             "question": "Which SQL keyword is used to sort results?",
             "options": [
-            "SORT",
-            "GROUP BY",
-            "ORDER BY",
-            "FILTER"
-            ],
+                "SORT",
+                "GROUP BY",
+                "ORDER BY",
+                "FILTER"
+                ],
             "answer": "ORDER BY",
             "answerIndex": 2
         },
         {
             "question": "What is a JOIN in SQL?",
             "options": [
-            "A type of query that combines rows from multiple tables",
-            "A way to back up databases",
-            "A technique to encrypt records",
-            "A function to merge columns"
-            ],
+                "A type of query that combines rows from multiple tables",
+                "A way to back up databases",
+                "A technique to encrypt records",
+                "A function to merge columns"
+                ],
             "answer": "A type of query that combines rows from multiple tables",
             "answerIndex": 0
         },
         {
             "question": "Which SQL function returns the number of records in a table?",
             "options": [
-            "TOTAL()",
-            "COUNT()",
-            "SUM()",
-            "NUMBER()"
-            ],
+                "TOTAL()",
+                "COUNT()",
+                "SUM()",
+                "NUMBER()"
+                ],
             "answer": "COUNT()",
             "answerIndex": 1
         },
         {
             "question": "Which SQL statement is used to remove specific rows from a table?",
             "options": [
-            "REMOVE FROM",
-            "DELETE FROM",
-            "DROP ROW",
-            "TRUNCATE"
-            ],
+                "REMOVE FROM",
+                "DELETE FROM",
+                "DROP ROW",
+                "TRUNCATE"
+                ],
             "answer": "DELETE FROM",
             "answerIndex": 1
         },
         {
             "question": "Which of the following best describes a relational database?",
             "options": [
-            "A collection of spreadsheets",
-            "A document-based system",
-            "A collection of tables with predefined relationships",
-            "A key-value data store"
-            ],
+                "A collection of spreadsheets",
+                "A document-based system",
+                "A collection of tables with predefined relationships",
+                "A key-value data store"
+                ],
             "answer": "A collection of tables with predefined relationships",
             "answerIndex": 2
         },
         {
             "question": "What does the SELECT * FROM table_name command do?",
             "options": [
-            "Deletes all data from the table",
-            "Updates all rows in the table",
-            "Selects all columns and rows from the table",
-            "Selects only unique records"
-            ],
+                "Deletes all data from the table",
+                "Updates all rows in the table",
+                "Selects all columns and rows from the table",
+                "Selects only unique records"
+                ],
             "answer": "Selects all columns and rows from the table",
             "answerIndex": 2
         },
         {
             "question": "What is the purpose of the UNIQUE constraint?",
             "options": [
-            "To automatically index a table",
-            "To ensure all values in a column are different",
-            "To create foreign key relationships",
-            "To allow null values"
-            ],
+                "To automatically index a table",
+                "To ensure all values in a column are different",
+                "To create foreign key relationships",
+                "To allow null values"
+                ],
             "answer": "To ensure all values in a column are different",
             "answerIndex": 1
         },
         {
             "question": "What does a NULL value represent in a relational database?",
             "options": [
-            "A zero value",
-            "An error",
-            "No value or unknown value",
-            "A negative number"
-            ],
+                "A zero value",
+                "An error",
+                "No value or unknown value",
+                "A negative number"
+                ],
             "answer": "No value or unknown value",
             "answerIndex": 2
         },
         {
             "question": "Which type of JOIN returns all records when there is a match in either table?",
             "options": [
-            "INNER JOIN",
-            "LEFT JOIN",
-            "RIGHT JOIN",
-            "FULL OUTER JOIN"
-            ],
+                "INNER JOIN",
+                "LEFT JOIN",
+                "RIGHT JOIN",
+                "FULL OUTER JOIN"
+                ],
             "answer": "FULL OUTER JOIN",
             "answerIndex": 3
         },
         {
             "question": "What is a composite key?",
             "options": [
-            "A foreign key with a default value",
-            "A primary key made from two or more columns",
-            "A column that holds numeric data",
-            "A key used for sorting data"
-            ],
+                "A foreign key with a default value",
+                "A primary key made from two or more columns",
+                "A column that holds numeric data",
+                "A key used for sorting data"
+                ],
             "answer": "A primary key made from two or more columns",
             "answerIndex": 1
         },
         {
             "question": "Which SQL keyword is used to combine the results of two queries and remove duplicates?",
             "options": [
-            "MERGE",
-            "UNION",
-            "JOIN",
-            "COLLECT"
-            ],
+                "MERGE",
+                "UNION",
+                "JOIN",
+                "COLLECT"
+                ],
             "answer": "UNION",
             "answerIndex": 1
         },
         {
             "question": "What does the GROUP BY clause do?",
             "options": [
-            "Filters individual rows",
-            "Deletes duplicate rows",
-            "Groups rows that have the same values into summary rows",
-            "Sorts the results in alphabetical order"
-            ],
+                "Filters individual rows",
+                "Deletes duplicate rows",
+                "Groups rows that have the same values into summary rows",
+                "Sorts the results in alphabetical order"
+                ],
             "answer": "Groups rows that have the same values into summary rows",
             "answerIndex": 2
         },
         {
             "question": "What is a schema in a relational database?",
             "options": [
-            "A type of database backup",
-            "A visualization of table contents",
-            "The structure that defines tables, fields, and relationships",
-            "A list of SQL commands"
-            ],
+                "A type of database backup",
+                "A visualization of table contents",
+                "The structure that defines tables, fields, and relationships",
+                "A list of SQL commands"
+                ],
             "answer": "The structure that defines tables, fields, and relationships",
             "answerIndex": 2
         }
     ],
 
-    "category4": [
+    "category4":[
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What is Artificial Intelligence (AI)?",
+            "options": [
+                "A branch of biology",
+                "A programming language",
+                "A field of study focused on creating machines that mimic human intelligence",
+                "A type of computer hardware"
+                ],
+            "answer": "A field of study focused on creating machines that mimic human intelligence",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which of the following is a common application of AI?",
+            "options": [
+                "Word processing",
+                "Web browsing",
+                "Speech recognition",
+                "Spreadsheet calculation"
+                ],
+            "answer": "Speech recognition",
+            "answerIndex": 2
+        },
+        {
+            "question": "What does 'machine learning' mean in the context of AI?",
+            "options": [
+                "Machines that are manually programmed",
+                "Machines that learn from data without being explicitly programmed",
+                "Machines that can only follow human instructions",
+                "Machines that operate without data"
+                ],
+            "answer": "Machines that learn from data without being explicitly programmed",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "Which algorithm is commonly used for classification tasks in AI?",
+            "options": [
+                "Dijkstra's algorithm",
+                "Merge sort",
+                "Decision trees",
+                "Quicksort"
+                ],
+            "answer": "Decision trees",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is a neural network?",
+            "options": [
+                "A biological term",
+                "A type of database",
+                "A series of algorithms that mimic the human brain",
+                "A computer virus"
+                ],
+            "answer": "A series of algorithms that mimic the human brain",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which term describes the ability of a machine to perform tasks typically requiring human intelligence?",
+            "options": [
+                "Automation",
+                "Artificial Intelligence",
+                "Robotics",
+                "Virtual Reality"
+                ],
+            "answer": "Artificial Intelligence",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "Which of the following is an example of natural language processing (NLP)?",
+            "options": [
+                "Image enhancement",
+                "Speech-to-text transcription",
+                "Pathfinding in games",
+                "Sorting algorithms"
+                ],
+            "answer": "Speech-to-text transcription",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What is supervised learning?",
+            "options": [
+                "Learning without using any data",
+                "Learning from unlabelled data",
+                "Learning from data with known outputs",
+                "Learning by trial and error only"
+                ],
+            "answer": "Learning from data with known outputs",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which of these is NOT a type of machine learning?",
+            "options": [
+                "Supervised learning",
+                "Unsupervised learning",
+                "Reinforcement learning",
+                "Command-line learning"
+                ],
+            "answer": "Command-line learning",
+            "answerIndex": 3
+        },
+        {
+            "question": "What is the main goal of reinforcement learning?",
+            "options": [
+                "To classify data into groups",
+                "To cluster data based on similarity",
+                "To learn actions that maximize a reward",
+                "To convert data into images"
+                ],
+            "answer": "To learn actions that maximize a reward",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which term refers to the dataset used to evaluate the performance of a machine learning model?",
+            "options": [
+                "Training set",
+                "Validation set",
+                "Testing set",
+                "Production set"
+                ],
+            "answer": "Testing set",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is overfitting in machine learning?",
+            "options": [
+                "When the model is too simple",
+                "When the model performs well on new data",
+                "When the model memorizes the training data and performs poorly on new data",
+                "When the model is trained with too little data"
+                ],
+            "answer": "When the model memorizes the training data and performs poorly on new data",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which of the following is a deep learning framework?",
+            "options": [
+                "NumPy",
+                "TensorFlow",
+                "jQuery",
+                "Django"
+                ],
+            "answer": "TensorFlow",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What does the Turing Test evaluate?",
+            "options": [
+                "Memory performance of machines",
+                "Speed of algorithms",
+                "Whether a machine can exhibit intelligent behavior indistinguishable from a human",
+                "Accuracy of computations"
+                ],
+            "answer": "Whether a machine can exhibit intelligent behavior indistinguishable from a human",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which component is essential for training an AI model?",
+            "options": [
+                "Labeled data",
+                "Web browser",
+                "Server logs",
+                "Data compression"
+                ],
+            "answer": "Labeled data",
+            "answerIndex": 0
+        },
+        {
+            "question": "Which AI concept involves the generation of new data similar to the training data?",
+            "options": [
+                "Reinforcement learning",
+                "Data mining",
+                "Generative modeling",
+                "Data cleaning"
+                ],
+            "answer": "Generative modeling",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which task would most likely use computer vision?",
+            "options": [
+                "Email spam detection",
+                "Product recommendation",
+                "Image recognition",
+                "Speech synthesis"
+                ],
+            "answer": "Image recognition",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is the role of a loss function in training a model?",
+            "options": [
+                "To sort the data",
+                "To measure how well the model predicts",
+                "To visualize the output",
+                "To reduce training time"
+                ],
+            "answer": "To measure how well the model predicts",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "Which field closely relates to AI and involves making decisions under uncertainty?",
+            "options": [
+                "Cryptography",
+                "Statistics",
+                "Graphic design",
+                "Hardware engineering"
+                ],
+            "answer": "Statistics",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which ethical concern is associated with AI?",
+            "options": [
+                "Slow processing speed",
+                "High memory usage",
+                "Bias in decision making",
+                "Excessive code comments"
+                ],
+            "answer": "Bias in decision making",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What is Generative AI primarily used for?",
+            "options": [
+                "Sorting data",
+                "Generating new content like text, images, or music",
+                "Calculating tax returns",
+                "Compressing files"
+                ],
+            "answer": "Generating new content like text, images, or music",
             "answerIndex": 1
         }
     ]
