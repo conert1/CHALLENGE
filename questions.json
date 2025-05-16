@@ -2,68 +2,89 @@
     "category1": [
         {
             "question": "Which of the following best describes JavaScript?",
-            "options": ["A server-side programming language.", "A programming language used for web development.", 
-                        "A markup language used to design websites.", "A database management system."],
+            "options": ["A server-side programming language.", 
+                        "A programming language used for web development.", 
+                        "A markup language used to design websites.", 
+                        "A database management system."],
             "answer": "A programming language used for web development",
             "answerIndex": 1
         },
         {
             "question": "What is the common naming convention for variables in JavaScript?",
-            "options": ["Snake case", "Pascal case", "Camel case", "Kebab case"],
+            "options": ["Snake case", 
+                        "Pascal case", 
+                        "Camel case", 
+                        "Kebab case"],
             "answer": "Camel case",
             "answerIndex": 2
         },
         {
             "question": "Which of the following does NOT describe an object in JavaScript?",
-            "options": ["A primitive data type.", "A non-primitive data type.", "A collection of key-value pairs.",
+            "options": ["A primitive data type.", 
+                        "A non-primitive data type.", 
+                        "A collection of key-value pairs.",
                         "A container for properties and methods."],
             "answer": "A primitive data type.",
             "answerIndex": 0
         },
         {
             "question": "What is an arrow function?",
-            "options": ["A function with no return value", "A shorthand syntax for defining functions",
-                        "A type of array", "A loop"],
-            "answer": "A shorthand syntax for defining functions",
+            "options": ["A function with no return value.", 
+                        "A shorthand syntax for defining functions.",
+                        "A type of array.", 
+                        "A loop."],
+            "answer": "A shorthand syntax for defining functions.",
             "answerIndex": 1
         },
         {
             "question": "What is destructuring in JavaScript?",
-            "options": ["Removing elements from an array.", "Deleting properties from an object.",
-                        "Extracting values from arrays or objects into variables.", "Splitting a string into characters."],
+            "options": ["Removing elements from an array.", 
+                        "Deleting properties from an object.",
+                        "Extracting values from arrays or objects into variables.", 
+                        "Splitting a string into characters."],
             "answer": "Extracting values from arrays or objects into variables.",
             "answerIndex": 2
         },
         {
             "question": "What is hoisting in JavaScript?",
-            "options": ["Pushing elements to the top of an array.", "Using variables without declaring them.", 
-            "A loop structure.", "JavaScript's default behavior of moving declarations to the top."],
+            "options": ["Pushing elements to the top of an array.", 
+                        "Using variables without declaring them.", 
+                        "A loop structure.", 
+                        "JavaScript's default behavior of moving declarations to the top."],
             "answer": "JavaScript's default behavior of moving declarations to the top.",
             "answerIndex": 3
         },
         {
             "question": "What is a higher-order function?",
-            "options": ["A function that is written using ES6 syntax.", "A function that takes another function as an argument or returns a function.", 
-                        "A function that returns a number greater than another.", "A function that is executed at a higher scope level."],
+            "options": ["A function that is written using ES6 syntax.", 
+                        "A function that takes another function as an argument or returns a function.", 
+                        "A function that returns a number greater than another.", 
+                        "A function that is executed at a higher scope level."],
             "answer": "A function that takes another function as an argument or returns a function.",
             "answerIndex": 1
         },
         {
             "question": "What does a callback function mean in JavaScript?",
-            "options": ["A function that returns another function.", " A function that is passed into another function as an argument.",
-                        "A function that calls itself.", "A built-in JavaScript method."],
-            "answer": "A function that is passed into another function as an argument",
+            "options": ["A function that returns another function.", 
+                        " A function that is passed into another function as an argument.",
+                        "A function that calls itself.", 
+                        "A built-in JavaScript method."],
+            "answer": "A function that is passed into another function as an argument.",
             "answerIndex": 1
         },
         {
             "question": " Which method adds an element to the end of an array?",
-            "options": ["push()", "pop()", "shift()", "unshift()"],
+            "options": ["push()", 
+                        "pop()", 
+                        "shift()", 
+                        "unshift()"],
             "answer": "push()",
             "answerIndex": 0
         },
         {
             "question": "What is the difference between null and undefined?",
-            "options": ["No difference.", "null means a variable was declared but not assigned; undefined means empty.",
+            "options": ["No difference.", 
+                        "null means a variable was declared but not assigned; undefined means empty.",
                         "undefined means a variable was declared but not assigned; null is intentional absence of value.",
                         "Both mean zero."],
             "answer": "undefined means a variable was declared but not assigned; null is intentional absence of value",
@@ -198,17 +219,6 @@
             ],
             "answer": "//",
             "answerIndex": 2
-        },
-        {
-            "question": "What is the output of the following?\n\nconsole.log([] + []);",
-            "options": [
-                "[]",
-                "0",
-                "undefined",
-                "\"\""
-            ],
-            "answer": "\"\"",
-            "answerIndex": 3
         },
         {
             "question": "Which built-in object in JavaScript allows you to work with dates and times?",
