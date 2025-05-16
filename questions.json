@@ -6,7 +6,8 @@
                 "A server-side programming language.", 
                 "A programming language used for web development.", 
                 "A markup language used to design websites.", 
-                "A database management system."],
+                "A database management system."
+            ],
             "answer": "A programming language used for web development",
             "answerIndex": 1
         },
@@ -16,7 +17,8 @@
                 "Snake case", 
                 "Pascal case", 
                 "Camel case", 
-                "Kebab case"],
+                "Kebab case"
+            ],
             "answer": "Camel case",
             "answerIndex": 2
         },
@@ -26,7 +28,8 @@
                 "A primitive data type.", 
                 "A non-primitive data type.", 
                 "A collection of key-value pairs.",
-                "A container for properties and methods."],
+                "A container for properties and methods."
+            ],
             "answer": "A primitive data type.",
             "answerIndex": 0
         },
@@ -36,7 +39,8 @@
                 "A function with no return value.", 
                 "A shorthand syntax for defining functions.",
                 "A type of array.", 
-                "A loop."],
+                "A loop."
+            ],
             "answer": "A shorthand syntax for defining functions.",
             "answerIndex": 1
         },
@@ -46,7 +50,8 @@
                 "Removing elements from an array.", 
                 "Deleting properties from an object.",
                 "Extracting values from arrays or objects into variables.", 
-                "Splitting a string into characters."],
+                "Splitting a string into characters."
+            ],
             "answer": "Extracting values from arrays or objects into variables.",
             "answerIndex": 2
         },
@@ -56,7 +61,8 @@
                 "Pushing elements to the top of an array.", 
                 "Using variables without declaring them.", 
                 "A loop structure.", 
-                "JavaScript's default behavior of moving declarations to the top."],
+                "JavaScript's default behavior of moving declarations to the top."
+            ],
             "answer": "JavaScript's default behavior of moving declarations to the top.",
             "answerIndex": 3
         },
@@ -66,7 +72,8 @@
                 "A function that is written using ES6 syntax.", 
                 "A function that takes another function as an argument or returns a function.", 
                 "A function that returns a number greater than another.", 
-                "A function that is executed at a higher scope level."],
+                "A function that is executed at a higher scope level."
+            ],
             "answer": "A function that takes another function as an argument or returns a function.",
             "answerIndex": 1
         },
@@ -76,7 +83,8 @@
                 "A function that returns another function.",         
                 "A function that is passed into another function as an argument.",
                 "A function that calls itself.", 
-                "A built-in JavaScript method."],
+                "A built-in JavaScript method."
+            ],
             "answer": "A function that is passed into another function as an argument.",
             "answerIndex": 1
         },
@@ -86,7 +94,8 @@
                 "push()", 
                 "pop()", 
                 "shift()", 
-                "unshift()"],
+                "unshift()"
+            ],
             "answer": "push()",
             "answerIndex": 0
         },
@@ -96,7 +105,8 @@
                 "No difference.", 
                 "null means a variable was declared but not assigned; undefined means empty.",
                 "undefined means a variable was declared but not assigned; null is intentional absence of value.",
-                "Both mean zero."],
+                "Both mean zero."
+            ],
             "answer": "undefined means a variable was declared but not assigned; null is intentional absence of value",
             "answerIndex": 2
         },
@@ -106,7 +116,8 @@
                 "let can be reassigned; const cannot.",
                 "const is block-scoped; let is not.",
                 "let is used for constants.",
-                "No difference."],
+                "No difference."
+            ],
             "answer": "let can be reassigned; const cannot.",
             "answerIndex": 0
         },
@@ -531,7 +542,7 @@
                 "WHERE",
                 "SELECT",
                 "GROUP BY"
-                ],
+            ],
             "answer": "WHERE",
             "answerIndex": 1
         },
@@ -542,7 +553,7 @@
                 "Links two tables together",
                 "Sets a default value",
                 "Indexes the table"
-                ],
+            ],
             "answer": "Links two tables together",
             "answerIndex": 1
         },
@@ -553,7 +564,7 @@
                 "DROP",
                 "REMOVE",
                 "CLEAR"
-                ],
+            ],
             "answer": "DROP",
             "answerIndex": 1
         },
