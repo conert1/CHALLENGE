@@ -174,10 +174,8 @@ function updateLeaderboard() {
     });
 }
 
-// Listen for category filter changes
 document
   .getElementById("leaderboard-filter")
   .addEventListener("change", updateLeaderboard);
 
-// Show leaderboard on first page load
 updateLeaderboard();
