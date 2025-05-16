@@ -123,238 +123,351 @@
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What is a template literal in JavaScript?",
+            "options": [
+                "A function that formats text",
+                "A method to define string templates in HTML",
+                "A string that uses backticks and allows embedded expressions",
+                "A comment block that spans multiple lines"
+            ],
+            "answer": "A string that uses backticks and allows embedded expressions",
+            "answerIndex": 2
+        },
+        {
+            "question": "What will the following expression return?\n\nBoolean('false')",
+            "options": [
+                "false",
+                "true",
+                "undefined",
+                "Error"
+            ],
+            "answer": "true",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What is the scope of a variable declared with `var` inside a function?",
+            "options": [
+                "Global scope",
+                "Block scope",
+                "Function scope",
+                "Module scope"
+            ],
+            "answer": "Function scope",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which keyword is used to handle exceptions in JavaScript?",
+            "options": [
+                "try",
+                "error",
+                "throw",
+                "except"
+            ],
+            "answer": "try",
+            "answerIndex": 0
+        },
+        {
+            "question": "What does JSON.stringify() do?",
+            "options": [
+                "Parses a JSON string into an object",
+                "Converts a JavaScript object into a JSON string",
+                "Encrypts a string",
+                "Deletes keys from a JSON object"
+            ],
+            "answer": "Converts a JavaScript object into a JSON string",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which method can be used to convert a string to an integer?",
+            "options": [
+                "parseInt()",
+                "parseFloat()",
+                "Number.toString()",
+                "Math.floor()"
+            ],
+            "answer": "parseInt()",
+            "answerIndex": 0
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which symbol is used to create a single-line comment in JavaScript?",
+            "options": [
+                "#",
+                "/*",
+                "//",
+                "<!--"
+            ],
+            "answer": "//",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "What is the output of the following?\n\nconsole.log([] + []);",
+            "options": [
+                "[]",
+                "0",
+                "undefined",
+                "\"\""
+            ],
+            "answer": "\"\"",
+            "answerIndex": 3
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which built-in object in JavaScript allows you to work with dates and times?",
+            "options": [
+                "Time",
+                "Clock",
+                "Calendar",
+                "Date"
+            ],
+            "answer": "Date",
+            "answerIndex": 3
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which of the following will throw an error?",
+            "options": [
+                "const x = 5; x = 10;",
+                "let x = 5; x = 10;",
+                "var x = 5; x = 10;",
+                "let x = 5; const y = 10;"
+            ],
+            "answer": "const x = 5; x = 10;",
+            "answerIndex": 0
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "What is the output of this code?\n\nconsole.log(typeof NaN);",
+            "options": [
+                "number",
+                "NaN",
+                "undefined",
+                "string"
+            ],
+            "answer": "number",
+            "answerIndex": 0
         }
     ],
 
     "category2": [
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What is the main role of a backend in a web application?",
+            "options": [
+                "Styling the user interface",
+                "Handling user interactions in the browser",
+                "Managing data, authentication, and business logic",
+                "Creating animations"
+            ],
+            "answer": "Managing data, authentication, and business logic",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is an API?",
+            "options": [
+                "A type of database",
+                "A server",
+                "A set of rules for how software applications communicate",
+                "A frontend framework"
+            ],
+            "answer": "A set of rules for how software applications communicate",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which database type stores data in rows and columns?",
+            "options": [
+                "Document database",
+                "Key-value store",
+                "Graph database",
+                "Relational database"
+            ],
+            "answer": "Relational database",
+            "answerIndex": 3
+        },
+        {
+            "question": "Which protocol is primarily used to transfer web pages over the internet?",
+            "options": [
+                "FTP",
+                "SMTP",
+                "HTTP",
+                "SSH"
+            ],
+            "answer": "HTTP",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which type of API follows a stateless architecture and uses HTTP?",
+            "options": [
+                "REST",
+                "SOAP",
+                "GraphQL",
+                "WebSocket"
+            ],
+            "answer": "REST",
+            "answerIndex": 0
+        },
+        {
+            "question": "What is authentication?",
+            "options": [
+                "Encoding a message for privacy",
+                "Verifying the identity of a user or system",
+                "Storing data in a database",
+                "Accessing another server"
+            ],
+            "answer": "Verifying the identity of a user or system",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "What does CRUD stand for in backend development?",
+            "options": [
+                "Create, Read, Update, Delete",
+                "Connect, Register, Upload, Download",
+                "Code, Run, Update, Deploy",
+                "Create, Render, Use, Drop"
+            ],
+            "answer": "Create, Read, Update, Delete",
+            "answerIndex": 0
+        },
+        {
+            "question": "What is the purpose of a database index?",
+            "options": [
+                "To store backup data",
+                "To encrypt data",
+                "To improve data retrieval speed",
+                "To assign unique IDs to users"
+            ],
+            "answer": "To improve data retrieval speed",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which of the following is a common format for API data exchange?",
+            "options": [
+                "CSV",
+                "HTML",
+                "JSON",
+                "XMLHttpRequest"
+            ],
+            "answer": "JSON",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is load balancing in backend systems?",
+            "options": [
+                "Equalizing CPU and memory usage on a server",
+                "Distributing incoming traffic across multiple servers",
+                "Balancing the design between frontend and backend",
+                "Keeping the app interface symmetrical"
+            ],
+            "answer": "Distributing incoming traffic across multiple servers",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
+            "question": "Which of the following is a benefit of using environment variables?",
+            "options": [
+                "Hardcoding passwords into source code",
+                "Sharing configuration with the frontend",
+                "Securing configuration outside of source code",
+                "Compiling code faster"
+            ],
+            "answer": "Securing configuration outside of source code",
+            "answerIndex": 2
+        },
+        {
+            "question": "What is the role of middleware in a backend application?",
+            "options": [
+                "Serving static files",
+                "Handling errors only",
+                "Adding processing steps between requests and responses",
+                "Rendering the frontend"
+            ],
+            "answer": "Adding processing steps between requests and responses",
+            "answerIndex": 2
+        },
+        {
+            "question": "Which HTTP method is typically used to retrieve data from a server?",
+            "options": [
+                "POST",
+                "GET",
+                "PUT",
+                "DELETE"
+            ],
+            "answer": "GET",
             "answerIndex": 1
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "What is a session in backend development?",
+            "options": [
+                "A backend server restart",
+                "A continuous stream of logs",
+                "A way to store user data between requests",
+                "A data backup routine"
+            ],
+            "answer": "A way to store user data between requests",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which type of database is ideal for storing hierarchical relationships?",
+            "options": [
+                "Graph database",
+                "Relational database",
+                "Document database",
+                "Key-value store"
+            ],
+            "answer": "Graph database",
+            "answerIndex": 0
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "What does latency refer to in backend systems?",
+            "options": [
+                "CPU usage",
+                "Data loss",
+                "Delay between request and response",
+                "Server temperature"
+            ],
+            "answer": "Delay between request and response",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which concept ensures only authorized users can perform certain actions?",
+            "options": [
+                "Authentication",
+                "Verification",
+                "Authorization",
+                "Logging"
+            ],
+            "answer": "Authorization",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "What is the purpose of caching in backend applications?",
+            "options": [
+                "Encrypting responses",
+                "Slowing down repeated requests",
+                "Temporarily storing data to improve performance",
+                "Securing user input"
+            ],
+            "answer": "Temporarily storing data to improve performance",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "Which strategy helps in horizontal scalability of backend applications?",
+            "options": [
+                "Adding more memory to one server",
+                "Using serverless functions",
+                "Adding more servers to handle requests",
+                "Making the UI simpler"
+            ],
+            "answer": "Adding more servers to handle requests",
+            "answerIndex": 2
         },
         {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
-        },
-        {
-            "question": "",
-            "options": [],
-            "answer": "",
-            "answerIndex": 1
+            "question": "What does a 500 Internal Server Error generally indicate?",
+            "options": [
+                "The server is not reachable",
+                "The client made a bad request",
+                "There is an error on the server side",
+                "The resource was not found"
+            ],
+            "answer": "There is an error on the server side",
+            "answerIndex": 2
         }
-
     ],
+
 
     "category3": [
         {
