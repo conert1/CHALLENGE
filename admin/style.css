@@ -40,7 +40,8 @@ button {
 
 .set-btn,
 .add-btn,
-.del-btn {
+.del-btn,
+.submit-btn {
     background-color: #28a745;
     color: white;
 }
