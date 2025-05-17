@@ -20,12 +20,25 @@
             </div>
             <div id="options-screen" class="screen hidden">
             <h2 id="category-title"></h2>
-            <div class="option-buttons">
+            <div class="option-buttons screen">
                 <button class="set-btn">Set number of questions for quiz</button>
                 <button class="add-btn">Add a question</button>
                 <button class="del-btn">Delete a question</button>
             </div>
+            <div id="set-questions-screen" class="screen hidden">
+                <h3>Set Number of Questions</h3>
+                <form id="number-form">
+                    <p>Please enter the number of questions you would like the quiz to ask</p>
+                    <label for="Number of questions">Number of questions</label>
+                    <input type="number" id="number-of-questions" min="1">
+                    <input type="submit" class="submit-btn" value="Submit"></input>
+                </form>
+                <p id="confirm-msg"></p>
+            </div>
                 <button id="back-btn" class="back-btn">Back to Categories</button>
+            </div>
+            <div id="set-questions-screen" class="screen hidden">
+                <h3>Set Number of Questions</h3>
             </div>
         </main>
     </div>
