@@ -1,5 +1,5 @@
 {
-    "category1": [
+    "category-one": [
         {
             "question": "Which of the following best describes JavaScript?",
             "options": [
@@ -277,7 +277,7 @@
         }
     ],
 
-    "category2": [
+    "category-two": [
         {
             "question": "What is the main role of a backend in a web application?",
             "options": [
@@ -501,7 +501,7 @@
     ],
 
 
-    "category3": [
+    "category-three": [
         {
             "question": "What is a primary key in a relational database?",
             "options": [
@@ -724,7 +724,7 @@
         }
     ],
 
-    "category4":[
+    "category-four":[
         {
             "question": "What is Artificial Intelligence (AI)?",
             "options": [
